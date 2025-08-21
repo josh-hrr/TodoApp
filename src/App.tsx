@@ -20,11 +20,19 @@ const mockTodos = [
 ];
 
 const App = () => {
-  const [todos] = useState(mockTodos);
+  const [todos, setTodos] = useState(mockTodos);
+
+  const handleRemove = (id: string): void => {
+    const newTodos = todos.filter((todo) => todo.id !== id); // Filter always creates a new array even if empty. Includes the values met by the condition, excludes the values not met by the condition.
+    setTodos(newTodos);
+  };
 
   return (
     <div className='todoapp'>
-      <Todos todos={todos} />
+      <Todos
+        onRemoveTodo={handleRemove}
+        todos={todos}
+      />
     </div>
   );
 };
