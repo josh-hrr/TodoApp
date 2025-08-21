@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Todos } from './components/Todos';
+import { type TodoId } from './types';
 
 const mockTodos = [
   {
@@ -22,7 +23,7 @@ const mockTodos = [
 const App = () => {
   const [todos, setTodos] = useState(mockTodos);
 
-  const handleRemove = (id: string): void => {
+  const handleRemove = ({ id }: TodoId): void => {
     const newTodos = todos.filter((todo) => todo.id !== id); // Filter always creates a new array even if empty. Includes the values met by the condition, excludes the values not met by the condition.
     setTodos(newTodos);
   };
