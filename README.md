@@ -9,5 +9,5 @@
 - [x] Add a filter TODOs (Footer)
 - [x] Show the number of pending TODOs
 - [x] Clear TODOs completed.
-- [ ] 
+- [x] Create Todo, Header Input
 - [ ] Investigate what is Sustain to avoid drop drilling 
