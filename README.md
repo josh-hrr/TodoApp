@@ -8,4 +8,6 @@
 - [x] Marking TODOs as completed
 - [x] Add a filter TODOs (Footer)
 - [x] Show the number of pending TODOs
+- [x] Clear TODOs completed.
+- [ ] 
 - [ ] Investigate what is Sustain to avoid drop drilling 
